@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="SignUp.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="s">
+            <h1>Sign Up</h1>
+            <h4>It's free and only takes a minute</h4>
+            <form action="/myaction.php" name="myform" onsubmit="return validateForm()" method="post">
+                <div class="formdesign" id="name">
+                Name: <input type="text"name="fname" required><span class="fromerror"><b></b></span>
+                
+                </div>
+                <div class="formdesign" id="email">
+                Email: <input type="email"name="femail"  pattern=".+@gmail\.com" required><span class="fromerror"><b></b></span>
+                
+                </div>
+                <div class="formdesign" id="phone"required>
+                Phone: <input type="phone"name="fphone" pattern="[0-9]{10}" required><span class="fromerror"><b></b></span>
+                
+                
+                <div class="formdesign" id="pass"required>
+                Password: <input type="password"name="fpass" pattern = "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                required><span class="fromerror"><b></b></span>
+                <p class="hii">*(Password contain 8 or more characters,at least one number, and one uppercase and lowercase
+                    letter)</p>
+                </div>
+                
+                <div class="formdesign" id="cpass">
+                Confirm Password: <input type="text"name="fcpass"required>
+                <span class="fromerror"><b></b></span>
+                </div>
+                
+                <input type="Submit" class="but" value="submit">
+            </form>
+
+        </div>
+        <p class="para-2">
+            Already have an account? <a href="login.html">Login here</a>
+        </p>
+    </div>
+    </div>
+</body>
+<script>
+    function clearErrors(){
+
+        errors=document.getElementsByClassName('fromerror');
+        for(let item of errors)
+        {
+            item.innerHTML="";
+        }
+    }
+function seterror(id,error){
+    //sets error inside tag of id
+    element=document.getElementById(id);
+    element.getElementsByClassName('fromerror')[0].innerHTML=error;
+}
+function validateForm(){
+    var returnval=true;
+    clearErrors();
+    var name=document.forms['myform']["fname"].value;
+    if(name.length<5){
+        seterror("name","Length of name is too short");
+        returnval=false;
+    
+    }
+
+    if(name.length==0){
+        seterror("name","* Enter your name");
+        returnval=false;
+    }
+    var email=document.forms['myform']["femail"].value;
+    if(email.length>20){
+    seterror("email","* enter valid email");
+    returnval=false;
+    }
+    var phone=document.forms['myform']["fphone"].value;
+    if(phone.length!=10){
+    seterror("phone","* enter valid phone number");
+    returnval=false;
+    }
+    var pass=document.forms['myform']["fpass"].value;
+    if(pass.length<6){
+    
+    seterror("pass","* Password must be atleast 6 charecters");
+    returnval=false;
+    }
+    var cpass=document.forms['myform']["fcpass"].value;
+    if(cpass!=pass){
+    
+    seterror("cpass","* Password and confirm password should be matched");
+    returnval=false;
+    }
+
+return returnval;
+}
+
+</script>
+</html>
+</html>

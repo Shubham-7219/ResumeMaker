@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #5d61bf !important;
+  width: 964px;
+  height: 920px;
+}
+
+.background2 {
+  position: absolute;
+  background-image: url("bi.jpg");
+  /* opacity: 0.5; */
+  /* filter: blur(8px);  */
+  border-radius: 8px;
+  height: 650px;
+  width: 750px;
+  margin: 80px 360px;
+
+}
+
+.login-box {
+  width: 360px;
+  height: 330px;
+  margin: auto;
+  border-radius: 3px;
+  background-color: #fff;
+  margin-top: 175px;
+  border: 1px solid black;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 15px;
+  font-family: 'Raleway', sans-serif;
+  color: #838ab6;
+}
+
+
+form {
+  width: 300px;
+  margin-left: 20px;
+}
+
+form label {
+  display: flex;
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: 'Manrope', sans-serif;
+}
+
+form input {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+}
+.formdesign{
+  /* margin-top:10px; */
+ /* padding: -5px;  */
+ font-family: 'Manrope', sans-serif;
+}
+.fromerror{
+ color: red;
+}
+.hii{
+  margin-top: -30px;
+  font-size: 15px;
+  color: rgb(186, 33, 33);
+}
+input[type="button"] {
+  width: 320px;
+  height: 35px;
+  margin-top: 20px;
+  border: none;
+  background-color: #5458b3;
+  color: white;
+  font-size: 18px;
+}
+.but{
+  cursor: pointer;
+    width: 320px;
+    height: 35px;
+    margin-top: 14px;
+    margin-left: 1px;
+    border: none;
+    background-color: #5458b3;
+    color: white;
+    font-size: 18px;
+}
+p {
+  font-family: 'Manrope', sans-serif;
+  text-align: center;
+  padding-top: 41px;
+  font-size: 17px;
+  margin-top: -80px;
+}

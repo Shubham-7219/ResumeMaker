@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+
+    height: 400px;
+    width: 100vw;
+    background-color: white;
+    /* border: 2px solid red; */
+    font-family: 'Raleway', sans-serif;
+    /* position: fixed;  */
+    top: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("bread.jpg");
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 88px;
+    padding: 10px 5px 0px 100px;
+    margin-left: 100px;
+}
+
+.title {
+    padding: 5px;
+}
+
+h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 30px;
+}
+
+/* .container{
+   
+} */
+nav ul {
+    /*  height: 58px; */
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+    left: 180px;
+    top: 5px;
+    list-style: none;
+    padding: 8px 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(62, 148, 228);
+    font-weight: bold;
+}
+
+.btn1 {
+    position: relative;
+    left: 180px;
+    top: 2px;
+    margin: 25px 15px;
+    padding: 5px 25px;
+    color: white;
+    background-color: rgb(62, 148, 228);
+    border: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn2 {
+    position: relative;
+    left: 180px;
+    top: 2px;
+    margin: 25px 15px;
+    padding: 5px 25px;
+    color: white;
+    background-color: rgb(62, 148, 228);
+    border: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.bx1 {
+    margin-left: 442px;
+    margin-top: 117px;
+    animation-delay: 0.2s;
+    animation: fadeIn 4s;
+
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    margin: -3px;
+    font-size: 40px;
+    padding: 0px 200px 0px;
+
+}
+
+.bx1 ul {
+    /*  height: 58px; */
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.bx1 ul li {
+    position: relative;
+    left: 180px;
+    top: 5px;
+    list-style: none;
+    padding: 8px 15px;
+}
+
+.bx1 ul li a {
+    letter-spacing: 1px;
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+main {
+    margin: 42px 0px 50px 0px;
+    /* position: fixed; */
+
+}
+
+.con1 {
+    left: 50px;
+    right: 50px;
+    margin: auto;
+    /* position: relative;  */
+    display: inline;
+    width: 900px;
+    height: 500px;
+    /* background-color: red; */
+}
+
+.con1 h1 {
+    padding-bottom: 5px;
+    margin-right: 400px;
+    color: navy;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 164px;
+}
+
+.p {
+    left: 80px;
+    right: 60px;
+    margin: 2px;
+    padding: 30px inherit 0x 30px;
+    padding-left: 160px;
+    padding-right: 150px;
+    color: black;
+    font-family: 'Manrope', sans-serif;
+
+}
+
+footer {
+    height: 400px;
+    width: 100vw;
+    background-color: #000080;
+    margin: 0px 0px;
+    /* top: 30px; */
+    padding: 6px;
+    /* display: inline-block;  */
+}
+
+.box1 {
+    margin: 30px 50px;
+    top: 15px;
+    padding: 15px;
+    height: 250px;
+    width: 400px;
+    /* background-color: red; */
+    display: block;
+}
+
+.logo2 {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo2 img {
+    width: 88px;
+    padding: 10px 5px 0px 0px;
+    margin-left: 10px;
+}
+
+.logo2 h2 {
+    color: white;
+    font-family: 'Manrope', sans-serif;
+}
+
+.box1 p {
+    margin-top: 10px;
+    padding: 7px;
+    line-height: 1.5;
+    font-size: 17px;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+}
+
+.box2 {
+    /* margin: 70px 50px; */
+    margin: -280px auto 0px;
+    /* top: 15px; */
+    padding: 15px;
+    height: 250px;
+    width: 200px;
+    /* background-color: red;  */
+    /* display: inline-block; */
+}
+
+.box2 ul li {
+    position: relative;
+    left: 45px;
+    top: 5px;
+    list-style: none;
+    padding: 8px 15px;
+}
+
+.box2 ul li a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.box2 h4 {
+    margin: 10px 30px 10px 50px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+    color: white;
+
+}
+
+.box2 ul li a:hover {
+    color: rgb(62, 148, 228);
+    font-weight: bold;
+}
+
+.box3 {
+    /* margin: 70px 50px; */
+    margin: -300px 1100px;
+    /* top: 15px; */
+    padding: 30px;
+    height: 300px;
+    width: 290px;
+    /* background-color: red;    */
+    /* display: inline-block; */
+}
+
+.box3 h4 {
+    /* margin: 10px 30px 10px 50px; */
+    margin: -20px -5px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+    color: white;
+}
+
+p {
+    color: white;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-family: 'Manrope', sans-serif;
+}
+
+p i {
+    display: block;
+}
+
+.mail i {
+    display: inline-block;
+    text-rendering: auto;
+}

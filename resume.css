@@ -1,0 +1,17 @@
+/*#rm-form{
+    
+}*/
+
+#rm-template{
+    display: none;
+}
+
+.myimage{
+    border: .5px solid black;
+    border-radius: 50%;
+    width: 100px;
+}
+
+.background{
+    background-color: aqua;
+}
